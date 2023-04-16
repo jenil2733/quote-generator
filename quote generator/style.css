@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.heading{
+    font-size: 8rem;
+  line-height: calc(20px + 20vh);
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+
+    margin-top: 200px
+}
+
+@-webkit-keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+  
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
+  
+  @keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+  
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
+  
+.container{
+
+    width: auto;
+    max-width: 900px;
+    
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgb(211 217 229 / 95%);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.35) inset; 
+}
+.quote-text{
+    font-size: 2.75rem;
+}
+.quote-author{
+    font-size: 2.5rem;
+    margin-top: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+.button-container{
+    margin-top: 15px;
+    text-align: right;
+}
+button{
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #333;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.6);
+}
+
+button:hover{
+    filter: brightness(110%);
+}
